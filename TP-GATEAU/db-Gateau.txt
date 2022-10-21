@@ -1,0 +1,38 @@
+CREATE TABLE Recettes (
+    RecetteID int NOT NULL PRIMARY KEY,
+    nom varchar (50),
+    duree TIME,
+    niveauDiff varchar (50),
+    estimPrix varchar (5)
+);
+
+CREATE TABLE Ingredient (
+    IngredientID int NOT NULL PRIMARY KEY,
+    nom varchar (50),
+    QteStock int
+    
+);
+
+CREATE TABLE Ustensile (
+    UstensileID int NOT NULL PRIMARY KEY,
+    nom varchar (50) 
+);
+
+CREATE TABLE Etape (
+    EtapeID int NOT NULL PRIMARY KEY,
+    descriptif varchar (255),
+    numero int
+    
+);
+
+CREATE TABLE Origine (
+    OrigineID int NOT NULL PRIMARY KEY,
+    localisation varchar (255)  
+);
+
+CREATE TABLE User (
+    ID int NOT NULL PRIMARY KEY,
+    login char (25),
+    mdp char (8)
+    
+);
